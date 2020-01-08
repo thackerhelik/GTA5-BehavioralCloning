@@ -35,7 +35,6 @@ while(True):
 #     time.sleep(3)
 #     print('up')
 #     ReleaseKey(S)
-# 
 # =============================================================================
     
     print('Loop took {} seconds'.format(time.time()-last_time))
