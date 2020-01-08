@@ -16,8 +16,8 @@ def process_img(original_image):
 def main():
         
     for i in list(range(4))[::-1]:
-    print(i+1)
-    time.sleep(1)
+        print(i+1)
+        time.sleep(1)
     
     last_time = time.time()
     while(True):
@@ -25,19 +25,19 @@ def main():
         #printscreen_numpy = np.array(printscreen_pil.getdata(), dtype='uint8').reshape((printscreen_pil.size[1], printscreen_pil.size[0], 3))
         new_screen = process_img(screen)
     
-    # =============================================================================
-    #     print('down')
-    #     PressKey(W)
-    #     time.sleep(3)
-    #     print('up')
-    #     ReleaseKey(W)
-    #     
-    #     print('down')
-    #     PressKey(S)
-    #     time.sleep(3)
-    #     print('up')
-    #     ReleaseKey(S)
-    # =============================================================================
+        # =============================================================================
+        #     print('down')
+        #     PressKey(W)
+        #     time.sleep(3)
+        #     print('up')
+        #     ReleaseKey(W)
+        #     
+        #     print('down')
+        #     PressKey(S)
+        #     time.sleep(3)
+        #     print('up')
+        #     ReleaseKey(S)
+        # =============================================================================
         
         print('Loop took {} seconds'.format(time.time()-last_time))
         last_time = time.time()
@@ -47,3 +47,5 @@ def main():
         if cv2.waitKey(25) & 0xFF == ord('q'):
             cv2.destroyAllWindows()
             break
+        
+main()
