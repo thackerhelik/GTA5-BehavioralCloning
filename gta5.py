@@ -3,7 +3,8 @@ from PIL import ImageGrab
 import cv2
 import time
 import sys
-sys.path.insert(0, '%cd%')
+import os
+sys.path.insert(0, os.getcwd() )
 from directkeys import PressKey, ReleaseKey, W, A, S, D
 
 def process_img(original_image):
