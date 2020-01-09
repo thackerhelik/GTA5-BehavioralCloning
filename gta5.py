@@ -3,7 +3,7 @@ from PIL import ImageGrab
 import cv2
 import time
 import sys
-sys.path.insert(0, 'Desktop/windows tf testing/')
+sys.path.insert(0, '%cd%')
 from directkeys import PressKey, ReleaseKey, W, A, S, D
 
 def process_img(original_image):
@@ -35,13 +35,12 @@ while(True):
 #     time.sleep(3)
 #     print('up')
 #     ReleaseKey(S)
-# 
 # =============================================================================
     
     print('Loop took {} seconds'.format(time.time()-last_time))
     last_time = time.time()
     
-    cv2.imshow('window', new_screen)
+    cv2.imshow('window', screen)
     #cv2.imshow('window2', cv2.cvtColor(screen, cv2.COLOR_BGR2RGB))
     if cv2.waitKey(25) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
