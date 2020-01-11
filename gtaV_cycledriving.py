@@ -3,7 +3,7 @@ from PIL import ImageGrab
 import cv2
 import time
 import sys
-sys.path.insert(0, 'Desktop/windows tf testing/')
+sys.path.insert(0, '%cd%')
 from directkeys import PressKey, ReleaseKey, W, A, S, D
 from numpy import ones,vstack
 from numpy.linalg import lstsq
