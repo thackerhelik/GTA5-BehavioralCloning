@@ -1,2 +1,2 @@
-# GTA5-SelfDrivingCar
-Learning self driving car - sentdex
+# GTA5-BehavioralCloning
+Learning self driving - sentdex
